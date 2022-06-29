@@ -1,0 +1,108 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   /*  background-image: linear-gradient(180deg,#0f69ca -8.57%,#b90a0a 82.96%); */
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgb(4, 43, 82) , rgb(9, 47, 72), rgb(213, 57, 57));
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+
+*{
+    
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box; 
+}
+body::before
+{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#b3e91ed4,#07b5ff);
+    clip-path: circle(22% at 30% 20%);
+}
+body::after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffffffef,#da00ff);
+    clip-path: circle(22% at 70% 90%);
+}
+::selection{
+    background-color: rgba(165, 42, 42, 0.377);
+}
+.cont{
+    width: 80%;
+    margin: 0 10%;
+}
+.head{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.432);
+    height: 8vh;
+    text-align: center;
+    margin: 1vh auto;
+    border-radius: 12px;
+    box-shadow: 0 1px 1px  1px rgb(211, 204, 204);
+    padding-top: 2vh;
+    cursor:zoom-in;
+    transition: 0.4s;
+    color: rgb(87, 32, 32);
+}
+.head:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.671);
+}
+.box{
+    background-color: rgba(255, 255, 255, 0.432);
+    width: 80%;
+    border-radius: 12px;
+    margin: 8vh auto;
+    height: 70vh;
+    box-shadow: 0 1px 1px  1px rgb(211, 204, 204);
+    padding: 2vh;
+    overflow: auto;
+}
+.box-ps{
+    width: 100%;
+    padding: 2px;
+    margin-top: 1vh;
+    border-radius: 1%;
+    border-top-left-radius: 4%;
+
+    background-color: rgba(255, 255, 255, 0.596);
+}
+.h1{
+    padding-left: 1.5vh;
+    color: rgb(9, 75, 9);
+    cursor: default;
+}
+.p{
+    padding-left: 1.5vh;
+    color: rgba(255, 255, 255, 0);
+    transition: 0.4s;
+    cursor: none;
+}
+.p:hover{
+    color: rgb(9, 75, 9);
+}
+.p-add{
+    display: flex;
+    margin-left: 1vh;
+    margin-bottom: 2vh;
+}
+.ft2{
+    color: navy;
+}
+.p2{
+    cursor: default;
+}
